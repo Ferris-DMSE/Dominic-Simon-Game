@@ -31,7 +31,7 @@ namespace simon_game_trial_2
         private int Level = 1;              //Game Level Status indicator. starts at zero and increments as game progresses
         private int State = 0;              //actual game stage indicator, selects which slot to test against within the list
         private int highScore = 0;              //Local save state high score to the game
-        private int btnNum = 0;             //Test holding variable to define button pressed
+        private int btnNum = -1;             //Test holding variable to define button pressed
         private List<int> answers = new List<int>();        //List of correct button sequence
         private DispatcherTimer LightTimer = new DispatcherTimer();  //Timer for Button Lighting sequence to show level
         private int LightSlot = 0;              //State storage for lighting indicator
@@ -59,7 +59,7 @@ namespace simon_game_trial_2
                     btnNum = 3;
                     break;
                 default:
-                    btnNum = 0;
+                    btnNum = -1;
                     break;
             }
             Lighting_off();

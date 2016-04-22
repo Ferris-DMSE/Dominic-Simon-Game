@@ -1,0 +1,7 @@
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\bin\Debug\SimonGameCore.dll
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\bin\Debug\SimonGameCore.pdb
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\obj\Debug\SimonGame.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\obj\Debug\SimonGameCore.dll
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\obj\Debug\SimonGameCore.pdb
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\bin\Debug\nunit.framework.dll
+C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\SimonGameCore\bin\Debug\nunit.framework.xml
