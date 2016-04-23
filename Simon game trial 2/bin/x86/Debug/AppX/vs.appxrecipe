@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\Simon game trial 2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-22T16:57:34.135</Modified>
+      <Modified>2016-04-22T17:20:50.972</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\Simon game trial 2\bin\x86\Debug\Simon game trial 2.exe">
       <PackagePath>entrypoint\Simon game trial 2.exe</PackagePath>
-      <Modified>2016-04-22T16:57:33.063</Modified>
+      <Modified>2016-04-22T17:20:50.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -510,7 +510,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\Documents\Git\DomProject\Dominic-Simon-Game\Simon game trial 2\bin\x86\Debug\Core\Simon game trial 2.exe">
       <PackagePath>Simon game trial 2.exe</PackagePath>
-      <Modified>2016-04-22T16:57:34.131</Modified>
+      <Modified>2016-04-22T17:20:50.970</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

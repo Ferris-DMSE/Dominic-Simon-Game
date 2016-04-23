@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using SimonGame;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,11 @@ namespace SimonGame.Tester
     [TestFixture]
     public class SimonGameTests
     {
-        [Test]
-        public void testFramework()
-        {
+        //[Test]
+        //public void WhenColorsAreClickedReturnNumbers([Values("Green","Blue","Red","Yellow")] string input)
+        //{
             
-        }
+
+        //}
     }
 }

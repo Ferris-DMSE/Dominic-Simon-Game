@@ -43,8 +43,8 @@ namespace simon_game_trial_2
         #region button_Presses
         private void Color_Click(object sender, TappedRoutedEventArgs e)
         {
-            string btn = Convert.ToString(((Button)sender).Content);
-            switch (btn)
+            Button btn = (Button)sender;
+            switch (btn.Content.ToString())
             {
                 case "Green":
                     btnNum = 0;
@@ -103,8 +103,7 @@ namespace simon_game_trial_2
         public MainPage()
         {
             this.InitializeComponent();
-            System_Reset();
-            initializeTimer();
+            initializeTimer(); // Do this somewhere else. Maybe on start?
         }
 
         private void System_Reset()
