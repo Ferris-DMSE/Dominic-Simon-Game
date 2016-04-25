@@ -1,1 +1,3 @@
 This project is the current edition of Dominic Kenney's Simon game for Windows Universal.
+
+update as of 4/25: App.xaml.cs is having an error calling out the Mainpage, using given code by microsoft
