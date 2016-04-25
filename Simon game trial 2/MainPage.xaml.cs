@@ -43,28 +43,28 @@ namespace simon_game_trial_2
         #region button_Presses
         private void Color_Click(object sender, TappedRoutedEventArgs e)
         {
+            btnNum = Button_detector(sender);
+            Lighting_off();
+            bool status = answercheck();
+            levelAdjuster(status);
+        }
+
+        private int Button_detector(object sender)
+        {
             string btn = Convert.ToString(((Button)sender).Content);
             switch (btn)
             {
                 case "Green":
-                    btnNum = 0;
-                    break;
+                    return 0;
                 case "Blue":
-                    btnNum = 1;
-                    break;
+                    return 1;
                 case "Red":
-                    btnNum = 2;
-                    break;
+                    return 2;
                 case "Yellow":
-                    btnNum = 3;
-                    break;
+                    return 3;
                 default:
-                    btnNum = 0;
-                    break;
+                    return 0;
             }
-            Lighting_off();
-            bool status = answercheck();
-            levelAdjuster(status);
         }
 
         private void Start_button(object sender, RoutedEventArgs e)
@@ -187,24 +187,22 @@ namespace simon_game_trial_2
         #region button_visual_modifiers
         private void Button_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
-            string btn = Convert.ToString(((Button)sender).Content);
             if (cursorTracking)
             {
-                switch (btn)
+                int colorDet = Button_detector(sender);
+                switch (colorDet)
                 {
-                    case "Green":
+                    case 0:
                         Green.Background = new SolidColorBrush(Colors.Green);
                         break;
-                    case "Blue":
+                    case 1:
                         Blue.Background = new SolidColorBrush(Colors.Blue);
                         break;
-                    case "Red":
+                    case 2:
                         Red.Background = new SolidColorBrush(Colors.Red);
                         break;
-                    case "Yellow":
+                    case 3:
                         Yellow.Background = new SolidColorBrush(Colors.Yellow);
-                        break;
-                    default:
                         break;
                 }
             }
@@ -213,26 +211,31 @@ namespace simon_game_trial_2
 
         private void Button_PointerExited(object sender, PointerRoutedEventArgs e)
         {
-            string btn = Convert.ToString(((Button)sender).Content);
             if (cursorTracking)
             {
-                switch (btn)
-                {
-                    case "Green":
-                        Green.Background = new SolidColorBrush(Colors.Gray);
-                        break;
-                    case "Blue":
-                        Blue.Background = new SolidColorBrush(Colors.Gray);
-                        break;
-                    case "Red":
-                        Red.Background = new SolidColorBrush(Colors.Gray);
-                        break;
-                    case "Yellow":
-                        Yellow.Background = new SolidColorBrush(Colors.Gray);
-                        break;
-                    default:
-                        break;
-                }
+                int btn = Button_detector(sender);
+                selective_color_clear(btn);
+            }
+        }
+
+        private void selective_color_clear(int btn)
+        {
+            switch (btn)
+            {
+                case 0:
+                    Green.Background = new SolidColorBrush(Colors.Gray);
+                    break;
+                case 1:
+                    Blue.Background = new SolidColorBrush(Colors.Gray);
+                    break;
+                case 2:
+                    Red.Background = new SolidColorBrush(Colors.Gray);
+                    break;
+                case 3:
+                    Yellow.Background = new SolidColorBrush(Colors.Gray);
+                    break;
+                default:
+                    break;
             }
         }
         #endregion
