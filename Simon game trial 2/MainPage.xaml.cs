@@ -301,4 +301,8 @@ namespace simon_game_trial_2
 
         #endregion
     }
+    class Lighttimers
+    {
+
+    }
 }
